@@ -1,14 +1,24 @@
 #include <stdio.h>
- int main(void) 
- {
-    float p, r, t, si;
-    printf("Enter principal amount: ");
-    scanf("%f", &p);
-    printf("Enter rate of interest: ");
-    scanf("%f", &r);
-    printf("Enter time period: ");
-    scanf("%f", &t);
-    si = (p * r * t) / 100;
-    printf("Simple Interest: %f\n", si);
+
+int main(void)
+{
+    int a, b, c;
+
+    printf("Enter three integers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a >= b && a >= c)
+    {
+        printf("The largest number is: %d\n", a);
+    }
+    else if (b >= a && b >= c)
+    {
+        printf("The largest number is: %d\n", b);
+    }
+    else
+    {
+        printf("The largest number is: %d\n", c);
+    }
+
     return 0;
- }
+}
