@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-int number;
-int count = 0;
-printf("Enter a positive integer: ");
-scanf("%d", &number);   
-while (number != 0) 
-{ 
-    number = number / 10;
-    count++;
+    int a, digit, reverse = 0;
+
+printf("Enter a number: ");
+scanf("%d", &a);
+
+    while(a > 0)
+    {
+        digit = a % 10;
+        a = a / 10;
+        reverse = reverse * 10 + digit;
+    }
+    printf("Reverse of the number is: %d\n", reverse);
+    return 0;
 }
- printf("Number of digits: %d\n", count);
-return 0;
-}
+reverse = reverse * 10 + digit; 
