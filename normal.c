@@ -2,19 +2,13 @@
 
 int main()
 {
-int number;
-int digit;
-int sum = 0;
+int n;
+int fact = 1;
 printf("Enter a number: ");
-scanf("%d", &number);
-while (number != 0) 
+scanf("%d", &n);
+while (n > 0)
 {
-    digit = number % 10;
-    sum = sum + digit;
-    number = number / 10;
-
-}
-
-printf("Sum of digits is: %d\n", sum);
-return 0;
+    fact = fact * n;
+    n--;}
+printf("Factorial is: %d\n", fact);
 }
