@@ -2,23 +2,15 @@
 
 int main(void)
 {
-    int a, b, c;
-
-    printf("Enter three integers: ");
-    scanf("%d %d %d", &a, &b, &c);
-
-    if (a >= b && a >= c)
-    {
-        printf("The largest number is: %d\n", a);
-    }
-    else if (b >= a && b >= c)
-    {
-        printf("The largest number is: %d\n", b);
-    }
-    else
-    {
-        printf("The largest number is: %d\n", c);
-    }
-
-    return 0;
+int number;
+int count = 0;
+printf("Enter a positive integer: ");
+scanf("%d", &number);   
+while (number != 0) 
+{ 
+    number = number / 10;
+    count++;
+}
+ printf("Number of digits: %d\n", count);
+return 0;
 }
