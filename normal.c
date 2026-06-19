@@ -1,22 +1,21 @@
 #include <stdio.h>
- int main(void)
+ int main(void) 
  {
-    int a, b;
-    printf(" First Number: ");
+    int a;
+    printf("Enter an integer: ");
     scanf("%d", &a);
-    printf(" Second Number: ");
-    scanf("%d", &b);
-    if (a >b)
-    {
-        printf(" %d is greater than %d\n", a, b);
+     if (a > 0)
+     {
+        printf("You entered a positive integer: %d\n", a);
     }
-    else if (a < b)
+    else if (a < 0)
     {
-        printf(" %d is less than %d\n", a, b);
+        printf("You entered a negative integer: %d\n", a);
     }
     else
     {
-        printf(" %d is equal to %d\n", a, b);
+        printf("You entered zero.\n");
     }
+     return 0;
  }
  
